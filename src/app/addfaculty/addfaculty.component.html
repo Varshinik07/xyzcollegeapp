@@ -5,15 +5,15 @@
             <div class="row">
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Name</label>
-                    <input type="text" placeholder="Name" class="form-control">
+                    <input type="text" placeholder="Name" class="form-control" name="name"[(ngModel)]="name">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Designation</label>
-                    <input type="text" placeholder="Designation" class="form-control">
+                    <input type="text" placeholder="Designation" class="form-control" name="designation"[(ngModel)]="designation">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Department</label>
-                    <select name="" id="" placeholder="Department" class="form-control">
+                    <select name="" id="" placeholder="Department" class="form-control" name="department"[(ngModel)]="department">
                         <option value="">CSE</option>
                         <option value="">ECE</option>
                         <option value="">EEE</option>
@@ -23,26 +23,26 @@
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">DOB</label>
-                    <input type="date" placeholder="DOB" class="form-control">
+                    <input type="date" placeholder="DOB" class="form-control" name="dob"[(ngModel)]="dob">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Education Qualification</label>
-                    <input type="text" placeholder="Educational qualification"class="form-control">
+                    <input type="text" placeholder="Educational qualification"class="form-control" name="education"[(ngModel)]="education">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Address</label>
-                    <input type="text"  placeholder="Adrdress" class="form-control">
+                    <input type="text"  placeholder="Adrdress" class="form-control" name="address"[(ngModel)]="address">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Phone number</label>
-                    <input type="text" placeholder="phone number" class="form-control">
+                    <input type="text" placeholder="phone number" class="form-control" name="phoneno"[(ngModel)]="phoneno">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">DOJ</label>
-                    <input type="date"placeholder="DOJ" class="form-control">
+                    <input type="date"placeholder="DOJ" class="form-control" name="doj"[(ngModel)]="doj">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                <button class="btn btn-success">Submit</button>
+                <button class="btn btn-success" (click)="readValues()">Submit</button>
                 </div>
                 
             </div>
