@@ -9,6 +9,19 @@ export class AddfacultyComponent implements OnInit {
 
   constructor() { }
 
+  name=""
+  designation=""
+  department=""
+  dob=""
+  education=""
+  address=""
+  phoneno=""
+  doj=""
+
+  readValues=()=>{
+    console.log("success")
+  }
+
   ngOnInit(): void {
   }
 

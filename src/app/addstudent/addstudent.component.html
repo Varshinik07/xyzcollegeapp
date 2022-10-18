@@ -5,23 +5,23 @@
             <div class="row">
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Name</label>
-                    <input type="text" placeholder="Name" class="form-control" >
+                    <input type="text" placeholder="Name" class="form-control" name="name"[(ngModel)]="name">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Roll no</label>
-                    <input type="text" placeholder="rollno" class="form-control" >
+                    <input type="text" placeholder="rollno" class="form-control" name="rollno"[(ngModel)]="rollno">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Admission No</label>
-                    <input type="text" placeholder="Admission" class="form-control">
+                    <input type="text" placeholder="Admission" class="form-control" name="admission"[(ngModel)]="admission">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">College name</label>
-                    <input type="text"  placeholder="college name"class="form-control">
+                    <input type="text"  placeholder="college name"class="form-control" name="college"[(ngModel)]="college">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Department</label>
-                    <select name="" id=""  placeholder="Department"class="form-control">
+                    <select name="" id=""  placeholder="Department"class="form-control" name="department"[(ngModel)]="department">
                         <option value="">CSE</option>
                         <option value="">ECE</option>
                         <option value="">BME</option>
@@ -31,7 +31,7 @@
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Blood group</label>
-                    <select name="" id="" placeholder="Blood group" class="form-control">
+                    <select name="" id="" placeholder="Blood group" class="form-control" name="bloodgroup"[(ngModel)]="bloodgroup">
                         <option value="">O+</option>
                         <option value="">O-</option>
                         <option value="">A+</option>
@@ -44,26 +44,26 @@
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">DOB</label>
-                    <input type="date" placeholder="DOB" class="form-control">
+                    <input type="date" placeholder="DOB" class="form-control" name="dob"[(ngModel)]="dob">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Parent name</label>
-                    <input type="text" placeholder="parent Name" class="form-control">
+                    <input type="text" placeholder="parent Name" class="form-control" name="parentname"[(ngModel)]="parentname">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">parent email Id</label>
-                    <input type="text"  placeholder="parent emailid" class="form-control">
+                    <input type="text"  placeholder="parent emailid" class="form-control" name="parentemailid"[(ngModel)]="parentemailid">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Guardian Name</label>
-                    <input type="text"  placeholder="GuardianName" class="form-control">
+                    <input type="text"  placeholder="GuardianName" class="form-control" name="guardianname"[(ngModel)]="guardianname">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Guardian Address</label>
-                    <textarea name="" id=""  placeholder="Guardian address" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea name="" id=""  placeholder="Guardian address" cols="30" rows="10" class="form-control" name="guardianaddress"[(ngModel)]="guardianaddress"></textarea>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-success">Submit</button>
+                    <button class="btn btn-success" (click)="readValues()">Submit</button>
                 </div>
             </div>
         </div>
