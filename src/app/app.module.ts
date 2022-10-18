@@ -9,6 +9,7 @@ import{ RouterModule, Routes} from '@angular/router';
 import { AddstudentComponent } from './addstudent/addstudent.component';
 import { ViewallstudentComponent } from './viewallstudent/viewallstudent.component';
 import { AddfacultyComponent } from './addfaculty/addfaculty.component';
+import { CollegedashComponent } from './collegedash/collegedash.component';
 const appRoutes:Routes=[
   {
     path:"",component:AdminComponent
@@ -21,7 +22,11 @@ const appRoutes:Routes=[
   },
   {
     path:"addfaculty",component:AddfacultyComponent
+  },
+  {
+    path:"collegedash",component:CollegedashComponent
   }
+
 ]
 @NgModule({
   declarations: [
@@ -30,7 +35,8 @@ const appRoutes:Routes=[
     AdminComponent,
     AddstudentComponent,
     ViewallstudentComponent,
-    AddfacultyComponent
+    AddfacultyComponent,
+    CollegedashComponent
   ],
   imports: [
     BrowserModule,
