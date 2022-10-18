@@ -7,12 +7,20 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AdminComponent } from './admin/admin.component';
 import{ RouterModule, Routes} from '@angular/router';
 import { AddstudentComponent } from './addstudent/addstudent.component';
+import { ViewallstudentComponent } from './viewallstudent/viewallstudent.component';
+import { AddfacultyComponent } from './addfaculty/addfaculty.component';
 const appRoutes:Routes=[
   {
     path:"",component:AdminComponent
   },
   {
     path:"addstudent",component:AddstudentComponent
+  },
+  {
+    path:"viewallstudent",component:ViewallstudentComponent
+  },
+  {
+    path:"addfaculty",component:AddfacultyComponent
   }
 ]
 @NgModule({
@@ -20,7 +28,9 @@ const appRoutes:Routes=[
     AppComponent,
     NavbarComponent,
     AdminComponent,
-    AddstudentComponent
+    AddstudentComponent,
+    ViewallstudentComponent,
+    AddfacultyComponent
   ],
   imports: [
     BrowserModule,
