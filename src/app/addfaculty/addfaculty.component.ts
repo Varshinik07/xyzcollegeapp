@@ -19,8 +19,18 @@ export class AddfacultyComponent implements OnInit {
   doj=""
 
   readValues=()=>{
-    console.log("success")
+    let data={
+    "name":this.name,
+    "designation":this.designation,
+    "department":this.department,
+    "dob":this.dob,
+    "education":this.education,
+    "address":this.address,
+    "phoneno":this.phoneno,
+    "doj":this.doj
   }
+  console.log(data)
+}
 
   ngOnInit(): void {
   }
