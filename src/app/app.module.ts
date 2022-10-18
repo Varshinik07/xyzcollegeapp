@@ -12,6 +12,7 @@ import { AddfacultyComponent } from './addfaculty/addfaculty.component';
 import { CollegedashComponent } from './collegedash/collegedash.component';
 import{HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ViewallfacultyComponent } from './viewallfaculty/viewallfaculty.component';
 const appRoutes:Routes=[
   {
     path:"",component:AdminComponent
@@ -27,8 +28,13 @@ const appRoutes:Routes=[
   },
   {
     path:"collegedash",component:CollegedashComponent
+  },
+  {
+    path:"viewallstudent",component:ViewallstudentComponent
+  },
+  {
+    path:"viewallfaculty",component:ViewallfacultyComponent
   }
-
 ]
 @NgModule({
   declarations: [
@@ -38,7 +44,8 @@ const appRoutes:Routes=[
     AddstudentComponent,
     ViewallstudentComponent,
     AddfacultyComponent,
-    CollegedashComponent
+    CollegedashComponent,
+    ViewallfacultyComponent
   ],
   imports: [
     BrowserModule,
